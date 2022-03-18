@@ -1,4 +1,5 @@
 class Person {
+  name1: "9999"
   constructor(str) {
     this.name1 = str
   }
