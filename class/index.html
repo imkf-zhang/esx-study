@@ -23,6 +23,16 @@
 
       let kate = new Red()
       console.log(kate.say())
+
+      // 静态属性实用的时候必须要带着这个类
+      class Book {
+        static name = 'red'
+        constructor(ll) {
+          Book.name = ll
+          console.log(Book.name)
+        }
+      }
+      let k = new Book('8888')
     </script>
   </body>
 </html>
