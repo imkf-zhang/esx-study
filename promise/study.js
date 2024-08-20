@@ -21,7 +21,7 @@ let promise2 = new Promise((resolve, reject) => {
   }, 1000);
 })
 promise2.then(res => {
-  console.log(res)
+  console.log('1', res) // 直接就不会走then的逻辑，想啥呢
 }).catch(err => {
   console.log('promise2抛出错误', err) // 一秒后将错误信息打印出
 })
@@ -34,4 +34,4 @@ let promise3 = new Promise((resolve, reject) => {
   }
 }) 
 // 2、new promise 会立即执行
-let
+// let
